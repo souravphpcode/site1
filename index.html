@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- CSS only -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        #more {
+            display: none;
+        }
+        /* * {
+            box-sizing: border-box;
+        } */
+        /* Create two equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column1 {
+            float: left;
+            background-color: rgb(1, 1, 19);
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <div class="navbar" style="background-color:rgb(2, 45, 133);">
+
+            <div class="container">
+                <i class="fas fa-envelope"> <span class="text-1" style="color:white; 
+                    font-family: monospace; font-style: normal; ">&nbsp;aeindia.net@gamil.com &nbsp;&nbsp; | &nbsp;&nbsp;</span><i class='fa fa-phone' style=" transform: rotateY(180deg);"></i> <span class="text-1" style="color:white; 
+                    font-family: monospace; font-style: normal; "> &nbsp;033-23359466</span> </i>
+                <div class="text-right" style=" margin-right: 100px;">
+
+                    <a class="btn btn-light" href="#"><span class="text-1" style="color:rgb(10, 45, 243);">Admission Going On</span></a>
+                    <span class="btn btn-light" style="color:rgb(10, 45, 243);">Call for Admission : 033-23359466</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="full" style="background-color:rgb(211, 212, 223);">
+            <div class="container">
+                <div class="top-nav">
+                    <br>
+                    <img src="12.png" class="img-responsive" alt="" style="float: left; height: 60px;width: 60px;" />
+
+                    <span style="font-size:xx-large;color:rgb(17, 27, 118); line-height :5% ;font-family: Arial;font-style: bold; text-shadow: 0px 1px 5px rgb(17, 27, 118);"><b>The Association of Engineers, India   </b><br></span>
+                    <span style="margin-left :150px; font-family:'Courier New', Courier, monospace;color:rgb(10, 45, 243);">(ESTD. 1919) </span>
+                    <div class=" head2" style="line-height :80%">
+                        <span style="margin-left :30px; font-size:small; font-family:'Courier New', Courier, monospace;color:rgb(10, 45, 243);">Registered under West Bengal Societies Registration Act, 1961                     </span>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-brown" style=" background-color: rgb(140, 16, 16);">
+            <div class="container-fluid" style="margin-left :150px;margin-left :100px; font-family:'Courier New', Courier, monospace;color:rgb(255, 255, 255);">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <!-- </button> -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color:rgb(255, 255, 255);">HOME</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">ABOUT US</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(255, 255, 255);">
+                    ACADEMIC
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">NOTICE</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">TRAINING & PLACEMENT</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">MEMBERSHIP & JOURNAL</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">GALLERY</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">ACHIEVEMENT</a>
+                        </li>
+                        &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">CONTACT US</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">Link</a>
+                        </li> -->
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> -->
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="home.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="home2.png" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <div style="float:bottom;">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="background-color:rgb(125, 12, 12);height: 25px;width: 25px;position:absolute;margin-top: 30%;margin-left: 90%;">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="background-color:rgb(125, 12, 12);height: 25px;width: 25px; margin-top: 30%;margin-right: 5%;">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+
+        <form align="center"><br><br>
+            <h1><span style="color:rgb(26, 26, 128);font-family:Arial;line-height :100%"><b>About</span> Us</b>
+            </h1>
+            <img src="minus.png" class="img-responsive" alt="" height="30px" width="90px" style="line-height :100%;" /><br> </form>
+        <div class="row">
+            <div class="column" style="background-color:white">
+                <img src="about.png" class="img-responsive" alt="" style="line-height :100%;border-radius: 5%;margin-left:150px;display: inline-block;" align="left" />
+
+            </div>
+            <div class="column" style="background-color:white">
+                <p style="margin-right: 100px;">
+                    The Association of Engineers, India is a landmark at Bidhannagar (Salt Lake City) Kolkata was established by a group of committed nationalist Indian engineers in the year of 1919, during the British Raj, to strength professional fraternity among Indian
+                    Engineers, and to foster sustained professional ethics among them. The Institute is now poised to make its programme five-fold based on Education, Training, Consultancy and Inter- Institutional collaboration.
+                    <span id="dots">...</span><span id="more"> Our Association has been promoting various knowledge upgrading and skill developing courses and training programme for engineers and technically qualified persons from weaker section of society. The Association is also engaged in imparting job oriented
+                    training to personnel in various disciplines of engineering and trades. All these courses are approved by the AICTE and are affiliated to the West Bengal State Council of Technical and Vocational Education and Skill Development.</span></p>
+
+                <br>
+
+                <button onclick="myFunction()" id="myBtn" style="background-color: #08085afd;color: white;">Read more</button>
+
+            </div>
+        </div>
+
+
+        <div>
+            <br><br><br> <br>
+        </div>
+
+        <div class="row">
+            <div class="column" style="background-color:rgb(45, 108, 204);">
+                <div style="margin-left: 150px;line-height: 100%; font-family: Arial, Helvetica, sans-serif;color: white;text-align: left;font-size: small;">
+                    <br><br>
+                    <h3><b>What can<span style="color: rgb(3, 3, 40);"> AEI</span> do for you?</b> </h3>
+                    <div style="line-height: 80%;">
+                        <img src="substract.png" class="img-responsive" alt="" height="30px" width="200%" /><br> </form>
+                        <p style="color:rgb(255, 255, 255);">>> You may get in touch with continuous professional development. </p>
+                        <p style="color:rgb(255, 255, 255);">>>You may have an opportunity to update your professional knowledge.</p>
+                        <p style="color:rgb(255, 255, 255);">>> You may get a chance to participate in our in-house activities. </p>
+                        <p style="color:rgb(255, 255, 255);">>> You may get your rights and privilege of being a professional engineer. </p>
+                        <p style="color:rgb(255, 255, 255);">>> Wide opportunity in participation in various seminars, meets, conferences, lectures and other Social activities. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="background-color:rgb(45, 108, 204);">
+                <div style="margin-left: 200px;line-height: 100%; font-family: Arial, Helvetica, sans-serif;color: white;text-align: left;font-size: small;">
+                    <br><br>
+                    <h3 style="color:rgb(255, 255, 255);"><b>Courses Offered</b></h3>
+                    <div style="line-height: 100%;">
+                        <img src="substract.png" class="img-responsive" alt="" height="30px" width="80%" /><br> </form>
+                        <p style="color:rgb(255, 255, 255);"> >> Advance Diploma in industrial safety </p>
+                        <p style="color:rgb(255, 255, 255);"> >> Certificate course on Roof Top SOlar Power Generation</p>
+                        <p style="color:rgb(255, 255, 255);"> >> Construction Supervior ('O' level) </p>
+                        <p style="color:rgb(255, 255, 255);"> >> Construction Supervior ('A' level) </p>
+                        <a class="btn btn-light" href="#"><span  style="color:rgb(10, 45, 243);">Read More</span></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="con">
+        <form align="center" style="background-image: url('1.jpg');background-repeat: no-repeat;opacity: 0.9;"><br><br>
+            <h1 style="font-family:Arial;line-height :100%"><b>Our <span style="color:rgb(110, 15, 15);font-family:Arial;line-height :100%;position:static;opacity: 1;"> Gallery</span></b>
+            </h1>
+            <div>
+
+                <img src="minus.png" class="img-responsive" alt="" height="30px" width="100px" style="line-height :110%;" /><br>
+
+                <img src="about1.png" class="img-responsive" alt="" height="20%" width="30%" style="line-height :70%;border-radius: 5%;" />
+                <img src="home.png" class="img-responsive" alt="" height="50%" width="30%" style="line-height :70%;border-radius: 5%;" />
+                <img src="home2.png" class="img-responsive" alt="" height="50%" width="30%" style="line-height :70%;border-radius: 5%;" />
+
+                <br> <br> <br> <br>
+                <a class="btn btn-primary" href="#"><span class="text-1" style="color:rgb(255, 255, 255);">View All</span></a>
+                <br> <br>
+            </div>
+    </div>
+    <div>
+
+    </div>
+    <div>
+        <br> <br>
+        <form align="center" style="background-color:whitesmoke">
+            <h1 style="font-family:Arial;line-height :100%;text-align: center;"><b> <span style="color:rgb(14, 8, 104);font-family:Arial;line-height :100%;position:static;opacity: 1;">Contact</span> Us</b>
+                <br><img src="minus.png" class="img-responsive" alt="" height="30px" width="100px" style="line-height :110%;" /><br></h1>
+
+            <div class="row">
+                <div class="column" style="background-color:whitesmoke">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0213182236434!2d88.34727231476066!3d22.57830598517985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277bb0b56d60b%3A0x36fd2319bbe702f9!2sThe%20Association%20of%20Engineers%2C%20India!5e0!3m2!1sen!2sin!4v1654407261794!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+                <div class="column" style="background-color:whitesmoke">
+                    <div class="mainForm">
+
+                        <form action="#" name="contactForm" method="post">
+                            <div>
+                                <div class="field_wrap">
+                                    <label style="color:rgb(255, 255, 255);">Username*</label><br>
+
+                                    <input type="text" name="fname">
+                                    <div id="username_txt">
+                                    </div>
+                                </div>
+                                <div class="field_wrap" style="color:rgb(246, 245, 255);">
+                                    <label>Email ID*</label><br>
+                                    <input type="email" name="femail">
+                                    <div id="email_txt">
+                                    </div>
+                                </div>
+                                <div class="field_wrap" style="color:rgb(239, 239, 239);">
+                                    <label>Message</label><br>
+                                    <textarea class="com" style=" height: auto;width: 90%;border-radius: 5px;background-color: rgb(16, 92, 143);"></textarea>
+                                    <!-- <input type="textarea" name="femail"> -->
+
+
+                                </div>
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit" class="submit" style="color:blue">
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="footer" style="background-color: rgba(1, 8, 22, 0.762);"> -->
+            <div class="row" style="background-color: rgba(1, 7, 18, 0.762);">
+                <div class="column1" style="background-color: rgba(1, 7, 18, 0.762);">
+                    <br> <br>
+                    <div style="line-height: 90%;">
+
+                        <h3 style=" color:rgb(200, 7, 7);margin-left: 150px; line-height:80%;  ">Location</h3>
+                        <img src="substract.png" class="img-responsive" alt="" height="15px" width="10%" style="color:rgb(200, 7, 7);margin-left: 150px; " />
+                        <br><br>
+                    </div>
+                    <div style="line-height:80% ">
+                        <p style="color:rgb(255, 255, 255);margin-left: 150px;line-height:80%;">our office is located at</p>
+                        <p style="color:rgb(255, 255, 255);margin-left: 150px;line-height:80%;font-size: large;"><b>Registered Office:</b></p>
+                        <p style="color:rgb(255, 255, 255);margin-left: 150px; line-height:80%;">Netaji Subhas Road, Kolkata-700001</p>
+                        <p style="color:rgb(255, 255, 255);margin-left: 150px; line-height:80%;font-size: large;"><b>Training Centre:</b></p>
+                        <p style="color:rgb(255, 255, 255);margin-left: 150px;line-height:80%; ">1A-11,sector-3,Salt Lake City, Kolkata-700097</p>
+                    </div>>
+                </div>
+                <div class="column1 " style="background-color: rgba(1, 7, 18, 0.762); ">
+                    <br> <br>
+                    <h3 style="color: rgb(200, 7, 7);line-height:80%;">Quick<span style="color: rgb(255, 255, 255)"> Link</span> </h3>
+                    <img src="substract.png" class="img-responsive" alt="" height="15px" width="13%" style="color:rgb(200, 7, 7); " />
+                    <br> <br>
+                    <div style="color:rgb(255, 255, 255);line-height:80%; ">
+                        <p>Home &nbsp; &nbsp; &nbsp; About Us</p>
+                        <p>Academic &nbsp; &nbsp; &nbsp; Notice</p>
+
+                        <p>Training & Placement &nbsp; &nbsp; &nbsp;Membership & Jounra</p>
+                        <p>Gallery &nbsp; &nbsp; &nbsp; Achievement</p>
+                        <p> Contact Us</p>
+                    </div>
+                </div>
+                <div class="column1 " style="background-color: rgba(1, 7, 18, 0.762); ">
+                    <br> <br>
+                    <h3 style="color: rgb(200, 7, 7);line-height:80%;">Open<span style="color: rgb(255, 255, 255)"> 6 days a week</span> </h3>
+                    <img src="substract.png" class="img-responsive" alt="" height="15px" width="13%" style="color:rgb(200, 7, 7); " />
+                    <br> <br>
+                    <p style="color: rgb(255, 255, 255);line-height:80%;">Monday to Wednesday<span style="color: rgb(183, 171, 171)">- 11.30am-5.30pm</span> </p>
+                    <p style="color: rgb(255, 255, 255);line-height:80%;">Friday to Sunday<span style="color: rgb(183, 171, 171)">- 11.30am-5.30pm</span> </p>
+                    <p style="color: rgb(255, 255, 255);line-height:80%;">Thursday<span style="color: rgb(183, 171, 171)">- close</span> </p>
+                </div>
+                <!-- </div> -->
+
+            </div>
+
+            <br>
+            <div class="footer" style="width: 100%;">
+                <img src="12.png" class="img-responsive" alt="" style="float: left; height: 40px;width: 40px; margin-left: 150px;-line-height :80%" />
+                <span style="font-size:xx-large;color:rgb(17, 27, 118); line-height :5% ;font-family: Arial;font-style: bold;font-size:larger;  text-shadow: 0px 1px 5px rgb(17, 27, 118);"><b>The Association of Engineers, India </b><br></span>
+                <div class=" head2" style="line-height :80%">
+                    <span style="margin-left :5px; font-size:xx-small; color:rgb(10, 45, 243);">Registered under West Bengal Societies Registration Act, 1961                     </span>
+                    <div style="margin-right: 150px;color: rgb(17, 27, 118);float: right;font-size:medium;">
+                        <p>Copyright <span>&copy;</span> 2022, The Association of Engineers,India</p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+
+</html>
